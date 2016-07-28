@@ -19,10 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*i-1Global Section styles*/
-section {
-  padding: 100px 0;
-}
-
 #services .inverted-header {
   padding: 1.4em 0;
   text-align: center;
@@ -372,61 +368,52 @@ header .vignette {
   }
 }
 
-.media-heading {
-  text-align: left;
-}
-
 #services {
+  padding: 100px 0;
   text-align: center;
   background: #22282c;
 }
 
-#services .media {
-  margin: 20px;
-  background: #1d2125;
+#services .media-services-wrapper {
+  padding: 30px;
 }
 
-#services .media-body {
+#services .media {
+  margin: 20px;
+}
+
+#services .media-body > p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
   color: white;
 }
 
-#services .media-body p {
-  text-align: left;
-  font-size: 14px;
-}
-
-#services .media-body .media-heading {
+#services h4.media-heading {
+  color: white;
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
 }
 
+#services img.web-dev-image {
+  height: auto;
+  width: 60px;
+}
+
+#services img.resp-design-image {
+  height: auto;
+  width: 60px;
+}
+
+#services img.toolbox-image {
+  height: auto;
+  width: 60px;
+}
+
 @media only screen and (min-width: 992px) {
   #services .media {
     margin: 0px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  #services .media {
-    margin: 20px;
-  }
-  #services .media-body > p {
-    text-align: left;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.02rem;
-  }
-  #services div.media .web-dev-image {
-    height: auto;
-    width: 80px;
-  }
-  #services div.media .resp-design-image {
-    height: auto;
-    width: 100px;
-  }
-  #services div.media img.toolbox-image {
-    height: auto;
-    width: 80px;
   }
 }
