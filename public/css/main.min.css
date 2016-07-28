@@ -19,12 +19,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*i-1Global Section styles*/
-section {
+#about {
   padding: 50px 0;
 }
 
-section h1 {
-  font-size: 30px;
+#about .header-text {
+  padding: 1.4em 0;
+  text-align: center;
+}
+
+#about .header-text h1 {
   color: #50E3C2;
   text-transform: uppercase;
   font-weight: bold;
@@ -32,14 +36,28 @@ section h1 {
   text-transform: uppercase;
 }
 
-section .header-text {
+#about .header-text hr.line {
+  width: 80px;
+  border-color: #50E3C2;
+  border-width: 3px;
+}
+
+#services .inverted-header {
   padding: 1.4em 0;
   text-align: center;
 }
 
-section hr, section hr.line {
+#services .inverted-header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+#services .inverted-header hr.line {
   width: 80px;
-  border-color: #50E3C2;
+  border-color: white;
   border-width: 3px;
 }
 
@@ -314,12 +332,11 @@ header .vignette {
   }
 }
 
-section {
+#about {
   padding: 50px 0;
 }
 
-section h1 {
-  font-size: 30px;
+#about h1 {
   color: #50E3C2;
   text-transform: uppercase;
   font-weight: bold;
@@ -327,12 +344,12 @@ section h1 {
   text-transform: uppercase;
 }
 
-section .header-text {
+#about .header-text {
   padding: 1.4em 0;
   text-align: center;
 }
 
-section hr, section hr.line {
+#about hr, #about hr.line {
   width: 80px;
   border-color: #50E3C2;
   border-width: 3px;
@@ -360,9 +377,6 @@ section hr, section hr.line {
   section {
     padding: 100px 0;
   }
-  section h1 {
-    font-size: 40px;
-  }
   #about img {
     height: 300px;
     width: 300px;
@@ -380,71 +394,61 @@ section hr, section hr.line {
   }
 }
 
+.media-heading {
+  text-align: left;
+}
+
 #services {
   text-align: center;
-  background: #22282C;
+  background: #22282c;
 }
 
-#services .header-text h1 {
-  color: white;
-}
-
-#services .header-text .line {
-  width: 80px;
-  border-color: white;
-  border-width: 3px;
-}
-
-#services div.service-panel {
-  margin: 0 auto;
-  padding: 20px 20px;
-  margin: 15px;
+#services .media {
+  margin: 20px;
   background: #1d2125;
-  border-bottom: solid #50E3C2;
-  border-width: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#services div.service-panel h3 {
+#services .media-body {
   color: white;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 auto;
 }
 
-#services div.service-panel .line {
-  width: 160px;
-  border-color: white;
-  border-width: 3px;
-}
-
-#services div.service-panel p {
+#services .media-body p {
   text-align: left;
-  font-size: 18px;
-  font-weight: 300;
-  color: white;
-  margin: auto 20px;
+  font-size: 14px;
 }
 
-#services div.service-panel img {
-  height: 80px;
-  width: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+#services .media-body .media-heading {
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-@media (min-width: 1200px) {
-  #services div.service-panel img {
-    height: 80px;
-    width: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+@media only screen and (min-width: 992px) {
+  #services .media {
+    margin: 0px;
   }
-  #services div.service-panel p {
+}
+
+@media only screen and (min-width: 1200px) {
+  #services .media {
+    margin: 20px;
+  }
+  #services .media-body > p {
     text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+  }
+  #services div.media .web-dev-image {
+    height: auto;
+    width: 80px;
+  }
+  #services div.media .resp-design-image {
+    height: auto;
+    width: 100px;
+  }
+  #services div.media img.toolbox-image {
+    height: auto;
+    width: 80px;
   }
 }

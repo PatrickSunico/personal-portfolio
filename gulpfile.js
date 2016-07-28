@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 // ======================================================
 
     var rawPaths = {
-      index: './index.html',
+      index: './public/index.html',
       scss: './raw/css/**/*.scss*',
       js: './raw/js/*.js',
       img: './raw/img/*'
