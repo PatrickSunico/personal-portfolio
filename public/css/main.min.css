@@ -19,27 +19,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*i-1Global Section styles*/
-#about {
-  padding: 50px 0;
-}
-
-#about .header-text {
-  padding: 1.4em 0;
-  text-align: center;
-}
-
-#about .header-text h1 {
-  color: #50E3C2;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-weight: 700px;
-  text-transform: uppercase;
-}
-
-#about .header-text hr.line {
-  width: 80px;
-  border-color: #50E3C2;
-  border-width: 3px;
+section {
+  padding: 100px 0;
 }
 
 #services .inverted-header {
@@ -333,15 +314,7 @@ header .vignette {
 }
 
 #about {
-  padding: 50px 0;
-}
-
-#about h1 {
-  color: #50E3C2;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-weight: 700px;
-  text-transform: uppercase;
+  padding: 100px 0;
 }
 
 #about .header-text {
@@ -349,7 +322,15 @@ header .vignette {
   text-align: center;
 }
 
-#about hr, #about hr.line {
+#about .header-text h1 {
+  color: #50E3C2;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+#about .header-text hr.line {
   width: 80px;
   border-color: #50E3C2;
   border-width: 3px;
@@ -374,9 +355,6 @@ header .vignette {
 }
 
 @media (min-width: 1200px) {
-  section {
-    padding: 100px 0;
-  }
   #about img {
     height: 300px;
     width: 300px;
