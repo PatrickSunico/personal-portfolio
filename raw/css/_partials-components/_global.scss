@@ -31,25 +31,6 @@ h1,h2,h3,h4,h5,h6,p {
 // }
 
 // Inverted part of the section with black backgrounds and white fonts
-// Services
-#services {
-  .inverted-header {
-   padding: 1.4em 0;
-   text-align: center;
-    h1 {
-      color: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-weight: 700px;
-      text-transform: uppercase;
-    }
-    hr.line {
-      width: 80px;
-      border-color: white;
-      border-width: 3px;
-    }
-  }
-}
 
 //Button Global Style
   .btn-sharp {

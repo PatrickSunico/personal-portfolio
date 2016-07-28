@@ -19,25 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /*i-1Global Section styles*/
-#services .inverted-header {
-  padding: 1.4em 0;
-  text-align: center;
-}
-
-#services .inverted-header h1 {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-weight: 700px;
-  text-transform: uppercase;
-}
-
-#services .inverted-header hr.line {
-  width: 80px;
-  border-color: white;
-  border-width: 3px;
-}
-
 .btn-sharp, section .btn-sharp {
   padding: 18px 24px;
   border: 1px solid #50E3C2;
@@ -368,6 +349,25 @@ header .vignette {
   }
 }
 
+#services .inverted-header {
+  padding: 1.4em 0;
+  text-align: center;
+}
+
+#services .inverted-header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+#services .inverted-header hr.line {
+  width: 80px;
+  border-color: white;
+  border-width: 3px;
+}
+
 #services {
   padding: 100px 0;
   text-align: center;
@@ -378,11 +378,18 @@ header .vignette {
   padding: 30px;
 }
 
-#services .media {
-  margin: 20px;
+#services div.media {
+  padding: 20px 0;
 }
 
-#services .media-body > p {
+#services .media-body hr {
+  width: 180px;
+  border-color: white;
+  border-width: 3px;
+  margin: 8px 0 14px;
+}
+
+#services .media-body p {
   text-align: left;
   font-size: 14px;
   font-weight: 500;
@@ -410,10 +417,4 @@ header .vignette {
 #services img.toolbox-image {
   height: auto;
   width: 60px;
-}
-
-@media only screen and (min-width: 992px) {
-  #services .media {
-    margin: 0px;
-  }
 }
