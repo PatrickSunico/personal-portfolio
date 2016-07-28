@@ -1,0 +1,26 @@
+//Breakpoints
+@mixin breakpoint-1200 {
+  @media only screen and (max-width:1200px){
+    @content;
+  }
+}
+@mixin breakpoint-991 {
+  @media only screen and (max-width:991px){
+    @content;
+  }
+}
+@mixin breakpoint-768 {
+  @media only screen and (max-width:768px) {
+    @content;
+  }
+}
+@mixin breakpoint-640 {
+  @media only screen and (max-width:640px) {
+    @content;
+  }
+}
+@mixin breakpoint-375 {
+  @media only screen and (max-width:375px){
+    @content;
+  }
+}

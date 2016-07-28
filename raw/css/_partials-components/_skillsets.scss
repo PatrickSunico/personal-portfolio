@@ -1,0 +1,185 @@
+//& use end to remove spacing SCSS is an idiot
+// use CSS Comments so koala can compile your comments to CSS
+//Ex. /*Some comment*/
+// 4. Skillsets Section
+
+// 
+// .media-heading {
+//   text-align: left;
+// }
+// .service-panel {
+//   background: #22282c;
+// }
+
+#services {
+  padding: 100px 0;
+  text-align:center;
+  background: #22282c;
+  .media-services-wrapper {
+    padding: 30px;
+  }
+  .media {
+    margin: 20px;
+  }
+  .media-body > p {
+    text-align:left;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    color:white;
+  }
+  h4.media-heading {
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  img.web-dev-image{
+    height: auto;
+    width: 60px;
+  }
+  img.resp-design-image{
+    height: auto;
+    width: 60px;
+  }
+  img.toolbox-image {
+    height: auto;
+    width: 60px;
+  }
+}
+
+
+
+
+
+// Targets medium sized screens
+@media only screen and (min-width: 992px) {
+  #services {
+    .media {
+      margin: 0px;
+    }
+    .media-body > p {
+    }
+
+    // img {
+    //   width: 80px;
+    // }
+  }
+}
+
+// Targets Large Sized Destops sized screens
+// @media only screen and (min-width: 1200px) {
+//   #services {
+//     .media {
+//       margin: 20px;
+//     }
+//     .media-body > p {
+//       text-align:left;
+//       font-size: 14px;
+//       font-weight: 500;
+//       letter-spacing: 0.02rem;
+//     }
+//     // Image Sizes for Desktop
+//     div.media {
+//       .web-dev-image{
+//         height: auto;
+//         width: 80px;
+//       }
+//       .resp-design-image{
+//         height: auto;
+//         width: 100px;
+//       }
+//       img.toolbox-image {
+//         height: auto;
+//         width: 80px;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+// #services {
+//   .media-body
+//   > h4 {
+//
+//   }
+//   > p {
+//
+//   }
+// }
+
+// #services {
+//   text-align:center;
+//   background: #22282C;
+//   .header-text {
+//     h1 {
+//       color: white;
+//     }
+//     .line {
+//       width: 80px;
+//       border-color: white;
+//       border-width: 3px;
+//     }
+//   }
+  // div.service-panel {
+  //   margin: 0 auto;
+  //   padding: 20px 20px;
+  //   margin: 15px;
+  //   background: #1d2125;
+  //   border-bottom: solid #50E3C2;
+  //   border-width: 4px;
+  //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//
+//     h3 {
+//       color: white;
+//       text-transform: uppercase;
+//       font-size: 24px;
+//       font-weight: 700;
+//
+//       margin: 0 auto;
+//     }
+//     .line{
+//       width: 160px;
+//       border-color: white;
+//       border-width: 3px;
+//
+//     }
+//     p {
+//       text-align: left;
+//       font-size: 18px;
+//       font-weight: 300;
+//       color: white;
+//       margin: auto 20px;
+//     }
+//     img {
+//       height: 80px;
+//       width: 80px;
+//       margin-top: 20px;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+//
+//
+// @media (min-width: 1200px) {
+//   #services {
+//
+//     div.service-panel{
+//       img {
+//         height: 80px;
+//         width: 100px;
+//         margin-top: 20px;
+//         margin-bottom: 20px;
+//
+//       }
+//       p {
+//         text-align:left;
+//         font-size: 18px;
+//         font-weight: 400;
+//         color: white;
+//       }
+//     }
+//   }
+// }

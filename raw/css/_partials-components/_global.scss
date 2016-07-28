@@ -1,0 +1,103 @@
+//Global Variables
+$primary-color: #50E3C2;
+$font-stack: "Open Sans", sans-serif;
+//Media Query Breakpoints
+$break-small: 320px;
+$break-mid: 768px;
+$break-large: 1200px;
+
+/*Global Styles*/
+body,html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p {
+  font-family: $font-stack;
+  margin: 0;
+}
+
+/*i-1Global Section styles*/
+// section {
+//   padding: 100px 0;
+// }
+
+// Inverted part of the section with black backgrounds and white fonts
+// Services
+#services {
+  .inverted-header {
+   padding: 1.4em 0;
+   text-align: center;
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-weight: 700px;
+      text-transform: uppercase;
+    }
+    hr.line {
+      width: 80px;
+      border-color: white;
+      border-width: 3px;
+    }
+  }
+}
+
+//Button Global Style
+  .btn-sharp {
+    padding: 18px 24px;
+    border: 1px solid $primary-color;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    color:#fff;
+    transition: all 0.30s ease-in-out;
+    &:link {
+      color:white
+    }
+    &:visited{
+      color:white;
+    }
+    &:hover {
+      background-color: rgb(80,277,194);
+      color: white;
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      color:white;
+    }
+  }
+
+section {
+  .btn-sharp {
+    @extend .btn-sharp;
+    background: $primary-color;
+    border: 0;
+    &:link {
+      color:white
+    }
+    &:visited{
+      color:white;
+    }
+    &:hover {
+      background-color: rgb(73, 241, 202);
+      color: white;
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      color:white;
+    }
+  }
+}
+//End Buttons

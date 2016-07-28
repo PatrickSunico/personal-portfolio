@@ -1,0 +1,63 @@
+//& use end to remove spacing SCSS is an idiot
+// use CSS Comments so koala can compile your comments to CSS
+//Ex. /*Some comment*/
+// 3.About Section
+
+// Global
+#about {
+  padding: 100px 0;
+  .header-text {
+    padding: 1.4em 0;
+    text-align: center;
+    h1 {
+      color: #50E3C2;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-weight: 700px;
+      text-transform: uppercase;
+    }
+    hr.line {
+      width: 80px;
+      border-color: #50E3C2;
+      border-width: 3px;
+    }
+  }
+}
+
+// Mobile First
+#about {
+  text-align:center;
+  img {
+    padding: 14px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: $primary-color;
+  }
+}
+
+//Desktop
+@media (min-width: 1200px) {
+  #about {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
+      color: $primary-color;
+    }
+    .about-content > p.lead {
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 30px;
+    }
+  }
+}

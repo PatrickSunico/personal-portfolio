@@ -1,0 +1,89 @@
+//& use end to remove spacing SCSS is an idiot
+// use CSS Comments so koala can compile your comments to CSS
+//Ex. /*Some comment*/
+  // 2.Main-header
+//Mixins
+@import '_mixins/_mixins.scss';
+// Mobile first
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img-min/bg.jpg');
+  text-align: center;
+  color: white;
+  .vignette {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.60);
+  }
+}
+
+.header-section {
+  position: relative;
+  text-align: center;
+  padding: 200px 15px 200px;
+  width: 100%;
+
+  .headline {
+    .line {
+      width: 100px;
+      border-width: 4px;
+      border-color: white;
+    }
+    // padding: 20%
+    h1 {
+      font-weight: 500;
+      // text-transform: uppercase;
+      // margin-top: 20px;
+      // margin-bottom: 20px;
+      margin: 20px 0;
+      font-size: 30px;
+
+    }
+  }
+}
+
+//Desktop
+@media (min-width: 1200px) {
+
+  header{
+    min-height: 100%;
+  }
+  .header-section {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+      // headline
+    .headline {
+      height: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      .line {
+        width: 500px;
+        border-width: 4px;
+        border-color: white;
+      }
+
+      h1 {
+        font-size: 90px;
+        margin: 20px auto;
+      }
+      a.btn {
+        margin: 20px 0;
+      }
+    }
+    // end
+  }
+}
