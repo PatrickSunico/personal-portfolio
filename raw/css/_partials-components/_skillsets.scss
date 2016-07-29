@@ -3,14 +3,6 @@
 //Ex. /*Some comment*/
 // 4. Skillsets Section
 
-//
-// .media-heading {
-//   text-align: left;
-// }
-// .service-panel {
-//   background: #22282c;
-// }
-
 // Services
 #services {
   .inverted-header {
@@ -23,7 +15,7 @@
       font-weight: 700px;
       text-transform: uppercase;
     }
-    hr.line {
+    .line {
       width: 80px;
       border-color: white;
       border-width: 3px;
@@ -31,27 +23,30 @@
   }
 }
 
-
 // Mobile first
 #services {
-  padding: 100px 0;
+  padding: 80px 0;
   text-align:center;
   background: #22282c;
   .media-services-wrapper {
     padding: 30px;
   }
   div.media {
-    // margin: 20px;
-    // margin: 30px 0;
     padding: 20px 0;
   }
   .media-body  {
-    hr {
+    hr.line {
       width: 180px;
       border-color: white;
       border-width: 3px;
-      margin: 8px 0 14px;
+      margin: 6px 0 6px;
     }
+    hr.line-sm{
+      @extend hr.line;
+      width: 140px;
+    }
+
+
     p {
       text-align:left;
       font-size: 14px;
@@ -66,6 +61,7 @@
     text-align: left;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
   }
   img.web-dev-image{
     height: auto;
@@ -81,139 +77,50 @@
   }
 }
 
-
-
-
-
-// Targets medium sized screens
-@media only screen and (min-width: 992px) {
+@media only screen and(min-width: 320px) {
   #services {
     .media {
-      // margin: 20px;
-      // margin: 20px 0;
+      width: 300px;
+      margin: 0 auto;
     }
-    .media-body > p {
-    }
-
-    // img {
-    //   width: 80px;
-    // }
   }
 }
 
-// Targets Large Sized Destops sized screens
-// @media only screen and (min-width: 1200px) {
-//   #services {
-//     .media {
-//       margin: 20px;
-//     }
-//     .media-body > p {
-//       text-align:left;
-//       font-size: 14px;
-//       font-weight: 500;
-//       letter-spacing: 0.02rem;
-//     }
-//     // Image Sizes for Desktop
-//     div.media {
-//       .web-dev-image{
-//         height: auto;
-//         width: 80px;
-//       }
-//       .resp-design-image{
-//         height: auto;
-//         width: 100px;
-//       }
-//       img.toolbox-image {
-//         height: auto;
-//         width: 80px;
-//       }
-//     }
-//   }
-// }
+// End mobile first
 
+// md-sm devices
+// set width for the media container to be 400px on small-to-medium devices
+@media only screen and (min-width: 992px) {
+  #services {
+    overflow-x:hidden;
+    .media {
+      margin: 0 auto;
+      width: 360px;
+    }
+  }
+}
 
+// lg-devices
+// Set width for media container to be 320px on large screens
+@media only screen and(min-width: 1200px) {
+  #services {
+    overflow-x:hidden;
 
-
-// #services {
-//   .media-body
-//   > h4 {
-//
-//   }
-//   > p {
-//
-//   }
-// }
-
-// #services {
-//   text-align:center;
-//   background: #22282C;
-//   .header-text {
-//     h1 {
-//       color: white;
-//     }
-//     .line {
-//       width: 80px;
-//       border-color: white;
-//       border-width: 3px;
-//     }
-//   }
-  // div.service-panel {
-  //   margin: 0 auto;
-  //   padding: 20px 20px;
-  //   margin: 15px;
-  //   background: #1d2125;
-  //   border-bottom: solid #50E3C2;
-  //   border-width: 4px;
-  //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-//
-//     h3 {
-//       color: white;
-//       text-transform: uppercase;
-//       font-size: 24px;
-//       font-weight: 700;
-//
-//       margin: 0 auto;
-//     }
-//     .line{
-//       width: 160px;
-//       border-color: white;
-//       border-width: 3px;
-//
-//     }
-//     p {
-//       text-align: left;
-//       font-size: 18px;
-//       font-weight: 300;
-//       color: white;
-//       margin: auto 20px;
-//     }
-//     img {
-//       height: 80px;
-//       width: 80px;
-//       margin-top: 20px;
-//       margin-bottom: 20px;
-//     }
-//   }
-// }
-//
-//
-// @media (min-width: 1200px) {
-//   #services {
-//
-//     div.service-panel{
-//       img {
-//         height: 80px;
-//         width: 100px;
-//         margin-top: 20px;
-//         margin-bottom: 20px;
-//
-//       }
-//       p {
-//         text-align:left;
-//         font-size: 18px;
-//         font-weight: 400;
-//         color: white;
-//       }
-//     }
-//   }
-// }
+    .media {
+      margin: 0 auto;
+      width: 320px;
+    }
+    img.web-dev-image{
+      height: auto;
+      width: 88px;
+    }
+    img.resp-design-image{
+      height: auto;
+      width: 88px;
+    }
+    img.toolbox-image {
+      height: auto;
+      width: 82px;
+    }
+  }
+}
