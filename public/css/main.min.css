@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
   border-radius: 0;
   color: #fff;
+  -webkit-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
 }
 
@@ -104,15 +105,18 @@ section .btn-sharp:active {
 
 .navbar-toggle .icon-bar {
   width: 22px;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .navbar-toggle.collapsed .hamburg-top {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .navbar-toggle.collapsed .hamburg-bot {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .navbar-toggle.collapsed .hamburg-mid {
@@ -120,8 +124,10 @@ section .btn-sharp:active {
 }
 
 .navbar-toggle .hamburg-top {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
 }
 
 .navbar-toggle .hamburg-mid {
@@ -129,8 +135,10 @@ section .btn-sharp:active {
 }
 
 .navbar-toggle .hamburg-bot {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
 }
 
 /*1-2 End*/
@@ -168,7 +176,6 @@ section .btn-sharp:active {
   width: 50%;
   color: #50E3C2;
   -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 
@@ -176,7 +183,6 @@ section .btn-sharp:active {
 .navbar-inverse {
   background: transparent !important;
   -webkit-transition: all .35s;
-  -moz-transition: all .35s;
   transition: all .35s;
   border: none;
 }
@@ -198,7 +204,6 @@ section .btn-sharp:active {
 .navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:focus {
   color: #50E3C2;
   -webkit-transition: all .35s;
-  -moz-transition: all .35s;
   transition: all .35s;
 }
 
@@ -208,7 +213,6 @@ section .btn-sharp:active {
   .navbar-inverse {
     padding: 8px 0;
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
     transition: background .5s ease-in-out, padding .5s ease-in-out;
   }
   .top-nav-collapse {
@@ -251,7 +255,7 @@ header .vignette {
 }
 
 .header-section .headline h1 {
-  font-weight: 500;
+  text-transform: uppercase;
   margin: 20px 0;
   font-size: 30px;
 }
@@ -264,7 +268,6 @@ header .vignette {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0 50px;
   }
@@ -328,7 +331,7 @@ header .vignette {
   color: #50E3C2;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #about img {
     height: 300px;
     width: 300px;
@@ -346,6 +349,10 @@ header .vignette {
   }
 }
 
+#services {
+  background: #22282c;
+}
+
 #services .inverted-header {
   padding: 1.4em 0;
   text-align: center;
@@ -356,7 +363,6 @@ header .vignette {
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 700px;
-  text-transform: uppercase;
 }
 
 #services .inverted-header .line {
@@ -366,9 +372,8 @@ header .vignette {
 }
 
 #services {
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
-  background: #22282c;
 }
 
 #services .media-services-wrapper {
@@ -428,8 +433,9 @@ header .vignette {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
   #services {
+    padding: 60px 0;
     overflow-x: hidden;
   }
   #services .media {
@@ -440,6 +446,7 @@ header .vignette {
 
 @media only screen and (min-width: 1200px) {
   #services {
+    padding: 120px 0;
     overflow-x: hidden;
   }
   #services .media {
@@ -448,14 +455,38 @@ header .vignette {
   }
   #services img.web-dev-image {
     height: auto;
-    width: 88px;
+    width: 92px;
   }
   #services img.resp-design-image {
     height: auto;
-    width: 88px;
+    width: 102px;
   }
   #services img.toolbox-image {
     height: auto;
-    width: 82px;
+    width: 86px;
   }
+}
+
+#contact {
+  padding: 100px 0;
+  background: #22282c;
+  border: solid 1px #fff;
+}
+
+#contact .inverted-header {
+  padding: 1.4em 0;
+  text-align: center;
+}
+
+#contact .inverted-header h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700px;
+}
+
+#contact .inverted-header .line {
+  width: 80px;
+  border-color: white;
+  border-width: 3px;
 }

@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
+    autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass');
 
 //Globs
@@ -28,7 +29,9 @@ var gulp = require('gulp'),
 
 // ======================================================
 
-
+var autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
 //gulp-sass
 // ======================================================
 
@@ -36,8 +39,19 @@ var gulp = require('gulp'),
     return gulp.src(rawPaths.scss)
            .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
            .pipe(rename('main.min.css'))
+           .pipe(autoprefixer(autoprefixerOptions))
            .pipe(gulp.dest(output.scssOut));
   });
+
+  // gulp.task('autoprefix', function () {
+  //     return gulp.src('.public/css/main.min.css')
+  //         .pipe(autoprefixer({
+  //             browsers: ['last 2 versions'],
+  //             cascade: false
+  //         }))
+  //         .pipe(gulp.dest(output.scssOut));
+  // });
+
 
   gulp.task('minifyJS', function(){
     return gulp.src(rawPaths.js)

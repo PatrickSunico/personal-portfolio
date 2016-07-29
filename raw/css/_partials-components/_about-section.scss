@@ -1,6 +1,3 @@
-//& use end to remove spacing SCSS is an idiot
-// use CSS Comments so koala can compile your comments to CSS
-//Ex. /*Some comment*/
 // 3.About Section
 
 // Global
@@ -40,9 +37,8 @@
     color: $primary-color;
   }
 }
-
 //Desktop
-@media (min-width: 1200px) {
+@include breakpoint-1200-sm {
   #about {
     img {
       height: 300px;
