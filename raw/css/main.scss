@@ -2,11 +2,13 @@
 @import '_partials-components/_global.scss';
 
 //Partials
+@import '_partials-components/_fonts.scss';
 @import '_partials-components/_nav.scss';
 @import '_partials-components/_main-header.scss';
 @import '_partials-components/_about-section.scss';
 @import '_partials-components/_skillsets.scss';
 @import '_partials-components/_contact-form.scss';
+@import '_partials-components/_footer.scss';
 
 //Mixins
 @import '_mixins/_mixins.scss';

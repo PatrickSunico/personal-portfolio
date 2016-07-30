@@ -7,10 +7,6 @@ body, html {
   padding: 0;
 }
 
-body p, html p {
-  font-size: 18px;
-}
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -20,6 +16,10 @@ body p, html p {
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+}
+
+p {
+  font-size: 18px;
 }
 
 /*i-1Global styles*/
@@ -76,6 +76,69 @@ section .btn-sharp:hover {
 section .btn-sharp:active {
   outline: none;
   color: white;
+}
+
+@font-face {
+  font-family: 'PS-Fonts';
+  src: url("../fonts/PS-Fonts.eot?ac3hju");
+  src: url("../fonts/PS-Fonts.eot?ac3hju#iefix") format("embedded-opentype"), url("../fonts/PS-Fonts.ttf?ac3hju") format("truetype"), url("../fonts/PS-Fonts.woff?ac3hju") format("woff"), url("../fonts/PS-Fonts.svg?ac3hju#PS-Fonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ps-"], [class*=" ps-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'PS-Fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ps-pixelHeart .path1:before {
+  content: "\e906";
+  color: black;
+}
+
+.ps-pixelHeart .path2:before {
+  content: "\e907";
+  margin-left: -1.142578125em;
+  color: #ff2625;
+}
+
+.ps-pixelHeart .path3:before {
+  content: "\e908";
+  margin-left: -1.142578125em;
+  color: white;
+}
+
+.ps-code:before {
+  content: "\e900";
+}
+
+.ps-codepen-logo:before {
+  content: "\e901";
+}
+
+.ps-github-logo:before {
+  content: "\e902";
+}
+
+.ps-linkedin-logo:before {
+  content: "\e903";
+}
+
+.ps-toolbox:before {
+  content: "\e904";
+}
+
+.ps-web-resp:before {
+  content: "\e905";
 }
 
 /*1-1:Logo Style*/
@@ -516,7 +579,7 @@ header .vignette {
 }
 
 .form-wrapper p.secondaryMessage a.email-link {
-  color: #4fe3c2;
+  color: #50E3C2;
   text-decoration: none;
   -webkit-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
@@ -566,4 +629,64 @@ button[type=submit]:active {
 input:-webkit-autofill :hover, :focus, :active {
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+#footer {
+  padding: 30px 0;
+  background: #131618;
+  border-top: solid 4px #50E3C2;
+  text-align: center;
+}
+
+#footer a.contact-links {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#footer a.contact-links:link {
+  text-decoration: none;
+}
+
+#footer a.contact-links:hover {
+  text-decoration: none;
+}
+
+#footer i.ps-linkedin-logo, #footer .ps-github-logo, #footer .ps-codepen-logo {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  margin: 0 20px;
+}
+
+#footer i.ps-linkedin-logo:hover, #footer .ps-github-logo:hover, #footer .ps-codepen-logo:hover {
+  color: #50ffc2;
+  outline: none;
+}
+
+#footer i.ps-linkedin-logo:active, #footer .ps-github-logo:active, #footer .ps-codepen-logo:active {
+  outline: none;
+  color: white;
+}
+
+#footer p.footer-message {
+  color: white;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+#footer p.footer-message strong {
+  color: #50E3C2;
+}
+
+#footer p.footer-message i.ps-pixelHeart {
+  font-size: 15px;
+}
+
+#footer p.copyright {
+  color: #706e6c;
+  font-size: 12px;
+  margin: auto 0;
+  font-weight: 700;
 }
