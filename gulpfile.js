@@ -42,17 +42,7 @@ var autoprefixerOptions = {
            .pipe(autoprefixer(autoprefixerOptions))
            .pipe(gulp.dest(output.scssOut));
   });
-
-  // gulp.task('autoprefix', function () {
-  //     return gulp.src('.public/css/main.min.css')
-  //         .pipe(autoprefixer({
-  //             browsers: ['last 2 versions'],
-  //             cascade: false
-  //         }))
-  //         .pipe(gulp.dest(output.scssOut));
-  // });
-
-
+  
   gulp.task('minifyJS', function(){
     return gulp.src(rawPaths.js)
           .pipe(uglify())

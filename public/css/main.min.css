@@ -7,6 +7,10 @@ body, html {
   padding: 0;
 }
 
+body p, html p {
+  font-size: 18px;
+}
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -397,7 +401,7 @@ header .vignette {
 
 #services .media-body p {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02rem;
   color: white;
@@ -468,13 +472,16 @@ header .vignette {
 }
 
 #contact {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #22282c;
-  border: solid 1px #fff;
+}
+
+#contact .container {
+  max-width: 800px;
 }
 
 #contact .inverted-header {
-  padding: 1.4em 0;
+  padding: 1.2em 0;
   text-align: center;
 }
 
@@ -489,4 +496,74 @@ header .vignette {
   width: 80px;
   border-color: white;
   border-width: 3px;
+}
+
+.form-wrapper {
+  margin: 0px auto;
+  background: #1b1d1f;
+  padding: 20px;
+}
+
+.form-wrapper h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form-wrapper p.firstMessage, .form-wrapper p.secondaryMessage {
+  color: white;
+  margin: 20px 0;
+}
+
+.form-wrapper p.secondaryMessage a.email-link {
+  color: #4fe3c2;
+  text-decoration: none;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.form-wrapper p.secondaryMessage a.email-link:hover {
+  color: #00ffe8;
+}
+
+.form-wrapper .form-group {
+  margin-bottom: 20px;
+}
+
+.form-wrapper .form-group input[type=text], .form-wrapper .form-group textarea.form-control {
+  padding: 20px 20px 20px 15px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  color: #22282c;
+}
+
+.form-wrapper .form-group input[type=text]::-webkit-input-placeholder, .form-wrapper .form-group textarea.form-control::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form-wrapper .form-group textarea.form-control {
+  padding: 15px 15px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  width: 100%;
+}
+
+button[type=submit]:link {
+  color: white;
+}
+
+button[type=submit]:active {
+  outline: none;
+}
+
+input:-webkit-autofill :hover, :focus, :active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
