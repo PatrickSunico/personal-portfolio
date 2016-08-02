@@ -14,15 +14,15 @@
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
   background-image: url('../img-min/bg.jpg');
   text-align: center;
   color: white;
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .vignette {
     position:absolute;
     top:0;
@@ -30,7 +30,6 @@ header {
     right:0;
     bottom:0;
     background-color:rgba(34, 40, 44, 0.60);
-
   }
 }
 
@@ -47,13 +46,11 @@ header {
       border-color: white;
     }
     h1 {
-      // font-weight: 700;
+      font-weight: 700;
       text-transform: uppercase;
-      // margin-top: 20px;
-      // margin-bottom: 20px;
       margin: 20px 0;
       font-size: 30px;
-
+      text-shadow: 2px 2px rgb(23, 21, 20);
     }
   }
 }

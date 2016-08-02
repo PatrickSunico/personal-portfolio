@@ -23,9 +23,9 @@ p {
 }
 
 /*i-1Global styles*/
-.btn-sharp, section .btn-sharp {
+.btn-sharp {
   padding: 18px 24px;
-  border: 1px solid #50E3C2;
+  background: #50E3C2;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -44,36 +44,12 @@ p {
 }
 
 .btn-sharp:hover {
-  background-color: #50ffc2;
+  background-color: #2ce7e7;
   color: white;
   outline: none;
 }
 
 .btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-section .btn-sharp {
-  background: #50E3C2;
-  border: 0;
-}
-
-section .btn-sharp:link {
-  color: white;
-}
-
-section .btn-sharp:visited {
-  color: white;
-}
-
-section .btn-sharp:hover {
-  background-color: #49f1ca;
-  color: white;
-  outline: none;
-}
-
-section .btn-sharp:active {
   outline: none;
   color: white;
 }
@@ -291,12 +267,14 @@ section .btn-sharp:active {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
-  background-size: cover;
-  background-position: center;
   background-image: url("../img-min/bg.jpg");
   text-align: center;
   color: white;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .vignette {
@@ -322,9 +300,11 @@ header .vignette {
 }
 
 .header-section .headline h1 {
+  font-weight: 700;
   text-transform: uppercase;
   margin: 20px 0;
   font-size: 30px;
+  text-shadow: 2px 2px #171514;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -651,7 +631,7 @@ input:-webkit-autofill :hover, :focus, :active {
   text-decoration: none;
 }
 
-#footer i.ps-linkedin-logo, #footer .ps-github-logo, #footer .ps-codepen-logo {
+#footer i.ps-linkedin-logo, #footer i.ps-codepen-logo, #footer .ps-github-logo {
   font-size: 30px;
   color: white;
   text-align: center;
@@ -660,20 +640,24 @@ input:-webkit-autofill :hover, :focus, :active {
   margin: 0 20px;
 }
 
-#footer i.ps-linkedin-logo:hover, #footer .ps-github-logo:hover, #footer .ps-codepen-logo:hover {
+#footer i.ps-linkedin-logo:hover, #footer i.ps-codepen-logo:hover, #footer .ps-github-logo:hover {
   color: #50ffc2;
   outline: none;
 }
 
-#footer i.ps-linkedin-logo:active, #footer .ps-github-logo:active, #footer .ps-codepen-logo:active {
+#footer i.ps-linkedin-logo:active, #footer i.ps-codepen-logo:active, #footer .ps-github-logo:active {
   outline: none;
   color: white;
 }
 
+#footer i.ps-codepen-logo {
+  font-size: 35px;
+}
+
 #footer p.footer-message {
   color: white;
-  margin: 20px 0;
-  font-size: 14px;
+  margin: 18px 0;
+  font-size: 18px;
 }
 
 #footer p.footer-message strong {
@@ -689,4 +673,31 @@ input:-webkit-autofill :hover, :focus, :active {
   font-size: 12px;
   margin: auto 0;
   font-weight: 700;
+}
+
+#portfolio {
+  padding: 100px 0;
+}
+
+#portfolio .header-text {
+  padding: 1.4em 0;
+  text-align: center;
+}
+
+#portfolio .header-text h1 {
+  color: #50E3C2;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+#portfolio .header-text hr.line, #portfolio .header-text #services .media-body hr.line-sm, #services .media-body #portfolio .header-text hr.line-sm {
+  width: 80px;
+  border-color: #50E3C2;
+  border-width: 3px;
+}
+
+#portfolio .spacing {
+  margin-bottom: 20px;
 }
