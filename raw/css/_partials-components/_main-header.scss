@@ -18,11 +18,10 @@ header {
   text-align: center;
   color: white;
 /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   .vignette {
     position:absolute;
     top:0;

@@ -19,7 +19,7 @@
     @content;
   }
 }
-@mixin breakpoint-375-lg {
+@mixin breakpoint-320-lg {
   @media only screen and (max-width:320px){
     @content;
   }
